@@ -3,6 +3,15 @@ A pretty simplified Docker Compose workflow that sets up a LEMP network of conta
 
 ## That's works perfectly
 
+- Don't forget to give permissions 
+```bash
+cd docker-compose-laravel && chmod 777 * -R
+```
+
+## Quick Start
+
+
+
 ## Usage
 
 To get started, make sure you have [Docker installed](https://docs.docker.com/docker-for-mac/install/) on your system, and then clone this repository.
