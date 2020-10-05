@@ -23,7 +23,7 @@ chmod +x /usr/local/bin/docker-compose
 
 ## Downloading Docker-Compose Files
 ```bash
-cd /opt && git clone https://github.com/laravel/laravel
+cd /opt && git clone https://github.com/Rene-Roscher/docker-compose-laravel
 ```
 
 ## Downloading Laravel Files (or your own files 😉)
