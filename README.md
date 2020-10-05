@@ -8,9 +8,28 @@ A pretty simplified Docker Compose workflow that sets up a LEMP network of conta
 cd docker-compose-laravel && chmod 777 * -R
 ```
 
-## Quick Start
+# Quick Start
 
+## Installing Docker
+```bash
+curl -sSL https://get.docker.com/ | CHANNEL=stable sh
+```
 
+## Installing Docker-Compose
+```bash
+curl -L https://github.com/docker/compose/releases/download/$(curl -Ls https://www.servercow.de/docker-compose/latest.php)/docker-compose-$(uname -s)-$(uname -m) > /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
+```
+
+## Downloading Docker-Compose Files
+```bash
+cd /opt && git clone https://github.com/laravel/laravel
+```
+
+## Downloading Laravel Files (or your own files 😉)
+```bash
+cd /opt/docker-compose-laravel/src && git clone https://github.com/laravel/laravel && cd laravel && mv * .. && rm laravel -R && cd /opt/docker-compose-laravel && chmod 777 * -R && docker-compose up -d --build && docker-compose run --rm composer update
+```
 
 ## Usage
 
